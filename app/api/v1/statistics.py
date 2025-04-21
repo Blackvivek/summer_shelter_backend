@@ -1,0 +1,1 @@
+# from fastapi import APIRouter\n\nrouter = APIRouter()\n\n@router.get("/")\nasync def get_shelter_statistics():\n    """Get shelter statistics summary"""\n    return {\n        "total_animals": 300,\n        "new_admissions": 50,\n        "adopted_animals": 120,\n        "rescued_animals": 150\n    }
